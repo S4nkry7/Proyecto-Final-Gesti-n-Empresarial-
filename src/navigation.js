@@ -3,23 +3,23 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Nosotros',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Acta Constitutiva',
+          href: getPermalink('/nosotros/saas'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Filosofía Organizacional',
+          href: getPermalink('/nosotros/filosofiaOrganizacional'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Estructura Organizacional',
+          href: getPermalink('/nosotros/mobile-app'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Cultura Organizacional',
+          href: getPermalink('/nosotros/personal'),
         },
       ],
     },
