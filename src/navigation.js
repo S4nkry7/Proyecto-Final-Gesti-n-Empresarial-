@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'Acta Constitutiva',
-          href: getPermalink('/nosotros/saas'),
+          href: getPermalink('/nosotros/actaConstitutiva'),
         },
         {
           text: 'Filosofía Organizacional',
@@ -15,11 +15,11 @@ export const headerData = {
         },
         {
           text: 'Estructura Organizacional',
-          href: getPermalink('/nosotros/mobile-app'),
+          href: getPermalink('/nosotros/estructuraOrganizacional'),
         },
         {
           text: 'Cultura Organizacional',
-          href: getPermalink('/nosotros/personal'),
+          href: getPermalink('/nosotros/culturaOrganizacional'),
         },
       ],
     },
