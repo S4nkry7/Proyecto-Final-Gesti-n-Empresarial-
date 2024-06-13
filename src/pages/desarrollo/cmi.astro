@@ -1,0 +1,75 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Cuadro de Mando Integral"
+    image={{ src: '~/assets/images/cmi.png', alt: 'Cuadro de Mando Integral',}}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Aumento de las ganancias en 10%"
+    columns={2}
+    items={[
+      {
+        title: 'Perspectiva Financiera',
+        description:
+          '<ul>' +
+               '<li>- Invertir en I+D.</li>' +
+               '<li>- Reducir en costos de mantenimiento.</li>' +
+               '<li>- Ahorro en servicios.</li>' +
+          '</ul>',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'Perspectiva del Cliente',
+        description:
+          '<ul>' +
+               '<li>- Programa de recompensas.</li>' +
+               '<li>- Horarios de atención más amplio.</li>' +
+               '<li>- Personalizar servicios.</li>' +
+               '<li>- FeedBack y mejora continua.</li>' +
+          '</ul>',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'Perspectiva de Procesos Internos',
+        description: '<ul>' +
+               '<li>- Estrategias de marketing.</li>' +
+               '<li>- Disminución de personal en oficina.</li>' +
+               '<li>- Tecnologías verdes.</li>' +
+               '<li>- Cumplir con normas y reguladiones.</li>' +
+          '</ul>',
+           icon: 'tabler:home-star',
+      },
+      {
+        title: 'Perspectiva de Capacidades Estratégicas',
+        description:
+          '<ul>' +
+               '<li>- Capacitación en tecnologías.</li>' +
+               '<li>- Bonos de productividad.</li>' +
+               '<li>- Home office.</li>' +
+               '<li>- Programa de concienciación sobre ciberseguridad.</li>' +
+               '<li>- Capacitación de uso correcto del equipo.</li>' +
+          '</ul>',
+        icon: 'tabler:carousel-horizontal',
+      },
+    ]}
+  />
+
+</Layout>

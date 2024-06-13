@@ -24,6 +24,27 @@ export const headerData = {
       ],
     },
     {
+      text: 'Desarrollo',
+      links: [
+        {
+          text: 'CMI',
+          href: getPermalink('/desarrollo/cmi'),
+        },
+        {
+          text: 'Herramientas de Gestión Estratégica',
+          href: getPermalink('/desarrollo/herramientasDeGestionEstrategica'),
+        },
+        {
+          text: 'Estructura Organizacional',
+          href: getPermalink('/nosotros/estructuraOrganizacional'),
+        },
+        {
+          text: 'Cultura Organizacional',
+          href: getPermalink('/nosotros/culturaOrganizacional'),
+        },
+      ],
+    },
+    {
       text: 'Pages',
       links: [
         {
