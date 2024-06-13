@@ -1,7 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro';
+import Testimonials from '~/components/widgets/Testimonial2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
@@ -18,24 +19,130 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="header">
-    <Header
-      {...headerData}
-      actions={[
-        {
-          variant: 'secondary',
-          text: 'Login',
-          href: '#',
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Acta Constitutiva"
+    subtitle=""
+    tagline="Datos"
+    items={[
+      {
+        title: 'Empresa / Organización ',
+        description: "Implementación de software constructivas (ISC).",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Proyecto ',
+        description:
+          "S&C Factur S.A de C.V ",
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Fecha de preparación ',
+        description:
+          '24/04/2024 ',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Cliente ',
+        description:
+          "Empacadora Alum.",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Patrocinador principal ',
+        description:
+          'Empacadora Alum.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Gerente de proyecto ',
+        description: 'Sánchez Ramos Jorge Alberto.',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Patrocinador / Patrocinadores "
+    subtitle=""
+    columns={2}
+    items={[
+      {
+        title: 'Empresa contratante',
+        description:
+          'Empacadora Alum  / Departamento de crédito y cobranza.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Encargado de desarrollar el proyecto',
+        description:
+          'Implementación de software constructivas (ISC).',
+        icon: 'tabler:home-star',
+      },
+    ]}
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Asignación del gerente de proyecto y nivel de autoridad "
+    testimonials={[
+      {
+        testimonial: `Gestión de presupuesto y de sus variaciones.`,
+        name: 'Velazquez Hernandez Aldo ',
+        job: 'Gerente de Recursos Humanos',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Velazquez Hernandez Aldo  Image',
         },
-        {
-          variant: 'primary',
-          text: 'Sign Up',
-          href: '#',
+      },
+      {
+        testimonial: `Resolución de conflictos .`,
+        name: 'Jurado Santos Alberto Isaac ',
+        job: 'Gerente de Desarrollo de Software',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Jurado Santos Alberto Isaac Image',
         },
-      ]}
-      isSticky
-    />
-  </Fragment>
+      },
+      {
+        testimonial: `Decisiones técnicas                                          .`,
+        name: 'Ponce Ortega Miguel Angel ',
+        job: 'Gerente de atención al cliente.',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Ponce Ortega Miguel Angel  Image',
+        },
+      },
+      {
+        testimonial: "Departamento / División  ~  División de Desarrollo,  Decisiones de personal (Staffing) ",
+        name: 'Sánchez Ramos Jorge Alberto ',
+        job: 'Gerente de proyecto',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Sánchez Ramos Jorge Alberto',
+        },
+      },
+      {
+        testimonial: `Ruta de escalamiento y limitaciones de autoridad.`,
+        name: 'Estrada Corona Alexis',
+        job: 'Gerente de finanzas.',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Estrada Corona Alexis Image',
+        },
+      },
+    ]}
+  />
+
 
   <!-- Hero2 Widget ******************* -->
 
