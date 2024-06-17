@@ -1,0 +1,363 @@
+---
+
+import Headline from '~/components/ui/Headline.astro';
+
+---
+
+<div class="container px-4 pt-8 pb-8 mx-auto  lg:px-0 ">
+  <Headline
+        title="Objetivos"
+        subtitle=""
+        classes={{
+          container: 'text-center md:text-center rtl:md:text-right mb-4 md:mb-8',
+          title: 'mb-4 text-3xl lg:text-4xl font-bold font-heading',
+          subtitle: 'mb-8 text-xl text-muted dark:text-slate-400',
+          // ...((classes?.headline as {}) ?? {}),
+        }}
+      />
+	<!-- Comparison Table -->
+	<section class="flex flex-col">
+		<div class="overflow-x-auto rounded-lg">
+			<div class="inline-block min-w-full align-middle">
+				<div class="overflow-hidden shadow sm:rounded-lg">
+					<table class="min-w-full">
+						<thead class="bg-gray-50 dark:bg-gray-900">
+							<tr>
+								<th 
+                  scope="col" 
+                  class="p-4 text-center font-semibold tracking-wider rounded-l-lg text-gray-900 dark:text-white"
+                > 
+                  Objetivo
+                </th>
+								<th
+									scope="col"
+									class="p-4 text-center font-semibold tracking-wider rounded-r-lg text-gray-900 dark:text-white"
+								>
+                  Indicador de éxito
+								</th>
+							</tr>
+						</thead>
+						<tbody class="bg-white dark:bg-gray-800">
+							<tr>
+								<td class="p-4 text-center font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Sistema de aplicación de facturas
+								</td>
+                <td class="p-4 text-center font-bold text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Alcance
+								</td>
+								<td class="p-4 text-center font-bold text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Sistema
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Manual de usuario
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Cronograma (Tiempo)
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-center font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Del 19/03/2024 al 20/06/2024
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Del 25/03/2024 al 24/06/2024
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-center font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Del 25/03/2024 al 23/06/2024
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Costo
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									$ 90,000.00 Noventa mil 
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo sin sobrepasar costes 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									$10,000.00 Diez mil
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo sin sobrepasar costes 
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									$10,000.00 Diez mil
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo sin sobrepasar costes 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Calidad
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Excelente calidad
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Aprobación del departamento y cliente
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+        <div class="py-20 overflow-hidden shadow sm:rounded-lg">
+					<table class="min-w-full">
+						<thead class="bg-gray-50 dark:bg-gray-900">
+							<tr>
+								<th 
+                  scope="col" 
+                  class="p-4 text-center font-semibold tracking-wider rounded-l-lg text-gray-900 dark:text-white"
+                > 
+                  Objetivo
+                </th>
+								<th
+									scope="col"
+									class="p-4 text-center font-semibold tracking-wider rounded-r-lg text-gray-900 dark:text-white"
+								>
+                  Indicador de éxito
+								</th>
+							</tr>
+						</thead>
+						<tbody class="bg-white dark:bg-gray-800">
+							<tr>
+								<td class="p-4 text-center font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Sistema de aplicación de facturas
+								</td>
+                <td class="p-4 text-center font-bold text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Excelente calidad
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Fácil Comprensión
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Excelente calidad
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Fácil Comprensión
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Otros
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Mantenimiento del sistema 
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Sin errores críticos por 9 meses
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+        <div class="overflow-hidden shadow sm:rounded-lg">
+					<table class="min-w-full">
+						<thead class="bg-gray-50 dark:bg-gray-900">
+							<tr>
+								<th 
+                  scope="col" 
+                  class="p-4 text-center font-semibold tracking-wider rounded-l-lg text-gray-900 dark:text-white"
+                > 
+                  Objetivo
+                </th>
+								<th
+									scope="col"
+									class="p-4 text-center font-semibold tracking-wider rounded-r-lg text-gray-900 dark:text-white"
+								>
+                  Indicador de éxito
+								</th>
+							</tr>
+						</thead>
+						<tbody class="bg-white dark:bg-gray-800">
+							<tr>
+								<td class="p-4 text-center font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Capacitación del personal
+								</td>
+                <td class="p-4 text-center font-bold text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Alcance
+								</td>
+								<td class="p-4 text-center font-bold text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Area de credito y cobranza 
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Recursos humanos(Encargado de capacitación)
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Cronograma (Tiempo)
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-center font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Del 24/06/2024 al 26/06/2024
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Del 26/06/2024 al 29/06/2024
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-center font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Costo
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									$ 5,000.00 Cinco mil
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo sin sobrepasar costes 
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									$ 5,000.00 Cinco mil
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo sin sobrepasar costes 
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-bold text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Calidad
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+
+								</td>
+							</tr>
+              <tr class="bg-gray-50 dark:bg-gray-900">
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Comprensión total para uso práctico
+								</td>
+								<td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+									Completo
+								</td>
+							</tr>
+
+              <tr>
+								<td class="p-4 text-left font-normal text-gray-500 rounded-l-lg whitespace-nowrap dark:text-gray-400">
+									Comprension Teorica para capacitación
+								</td>
+                <td class="p-4 text-center font-normal text-gray-500 rounded-r-lg whitespace-nowrap dark:text-gray-400">
+                  Completo
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

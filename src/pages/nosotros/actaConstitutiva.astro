@@ -7,11 +7,10 @@ import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
-import Pricing from '~/components/widgets/Pricing.astro';
-
+import TablaObjetivos from '~/components/widgets/TablaObjetivos.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
   title: 'SaaS Landing Page',
@@ -117,6 +116,371 @@ const metadata = {
     </Fragment>
   </Features2>
 
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="Requerimientos de alto nivel"
+    items={[
+      {
+        description:
+          'Ingresar y almacenarsusfacturas.',
+      },
+      {
+        description: `Buscar en estas las que concuerdan con el pago recibido.`,
+      },
+      {
+        description:
+          'Búsqueda especializada de facturas.',
+      },
+      {
+        description: `Historial de aplicación de pagos.`,
+      },
+      {
+        description:
+          'Calendario de vencimiento de facturas.',
+      },
+      {
+        description: `Mostrar estadísticas de los clientes con más atrasos.`,
+      }
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Departamento de Desarrollo de Software',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Requerimientos del producto:
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        description:
+          'Registrar nombre y logo.',
+      },
+      {
+        description: 
+        `Actualización del sistema operativo de los equipos.`,
+      },
+      {
+        description:
+          'Cumplir con el costo estimado.',
+      },
+      {
+        description: `Desarrollar el proyecto en el tiempo estipulado.`,
+      }
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Departamento de Desarrollo de Software',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Requerimientos del proyecto:
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <TablaObjetivos></TablaObjetivos>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Content Widget **************** -->
+
+<Content
+  title="Premisas y restricciones"
+  items={[
+    {
+      description:
+        'Los equipos requieren ser actualizados para que el proyecto funcione correctamente.',
+    },
+    {
+      description: `La eficiencia de trabajo en el área es escasa.`,
+    },
+    {
+      description:
+        'Se requiere mejorar la eficiencia del departamento.',
+    },
+    {
+      description: `El proyecto debe mejorar la eficiencia del departamento.`,
+    }
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+    alt: 'Departamento de Desarrollo de Software',
+  }}
+  callToAction={{
+  }}
+  >
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Premisas:
+    </h3>
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+<!-- Content Widget **************** -->
+
+<Content
+  isReversed
+  items={[
+    {
+      description:
+        'No sobrepasar el coste del proyecto.',
+    },
+    {
+      description: 
+      `Reuniones mensuales con el cliente para discutir avances.`,
+    }
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+    alt: 'Departamento de Desarrollo de Software',
+  }}
+  callToAction={{
+  }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Restricciones:
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+</Content>
+
+
+<!-- Content Widget **************** -->
+
+<Content
+  title="Riesgos iniciales de alto nivel"
+  items={[
+    {
+      description:
+        'El costo elevado.',
+    },
+    {
+      description: `Corto tiempo de desarrollo.`,
+    },
+    {
+      description:
+        'No encontrar los desarrolladores a tiempo, para la etapa de desarrollo.',
+    },
+    {
+      description: `Cambios imprevistos a proyecto.`,
+    },
+    {
+      description: `Dificultades en el proceso de capacitación del personal.`,
+    }
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+    alt: 'Departamento de Desarrollo de Software',
+  }}
+  callToAction={{
+  }}
+/>
+
+
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Cronograma de hitos principales"
+    items={[
+      {
+        title: `Inicio <br /> <span class="text-sm font-normal">16/02/2024</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: ` Documentación <br /> <span class="text-sm font-normal">27/03/2024</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Desarrollo <br /> <span class="text-sm font-normal">20/06/2024</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: ` Instalación <br /> <span class="text-sm font-normal">24/06/2024</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Capacitación <br /> <span class="text-sm font-normal">29/06/2024</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Entrega del proyecto <br /> <span class="text-sm font-normal">30/06/2024</span>`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  >
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Steps>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Presupuesto inicial asignado."
+    subtitle=""
+    columns={1}
+    items={[
+      {
+        title: '$150,000.00 - ciento cincuenta mil.',
+        description:
+          '',
+        icon: 'tabler:school',
+      },
+    ]}
+  >
+</Features2>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Lista de Interesados (stakeholders)"
+    subtitle=""
+    columns={2}
+    items={[
+      {
+        title: 'Empacadora Alum',
+        description:
+          'Empresa contratante - Departamento de crédito y cobranza.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Implementación de software constructivas (ISC)',
+        description:
+          'Encargado de desarrollar el proyecto.',
+        icon: 'tabler:home-star',
+      },
+    ]}
+  >
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="porfolio"
+    title="Requisitos de aprobación del proyecto:"
+    isReversed
+    items={[
+      {
+        description:
+          'Proyecto terminado.',
+      },
+      {
+        description: 
+        `El proyecto cumple su cometido.`,
+      },
+      {
+        description:
+          'Manuales de usuario.',
+      },
+      {
+        description: `Manual técnico.`,
+      },
+      {
+        description: `Capacitación del personal.`,
+      }
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="Criterios de cierre o cancelación:"
+    items={[
+      {
+        description:
+          'El cliente abandone el proyecto.',
+      },
+      {
+        description: 
+        `Incidentes en el área de trabajo que imposibilite la continuación de este.`,
+      },
+      {
+        description:
+          'Los desarrolladores abandonen el proyecto.',
+      },
+      {
+        description: `El costo se eleve demasiado.`,
+      },
+      {
+        description: 
+        `Los requisitos cambien por completo el rumbo del proyecto.`,
+      },
+      {
+        description:
+          'Problemas legales.',
+      },
+      {
+        description: `Cambio en las necesidades de la empresa.`,
+      }
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Departamento de Desarrollo de Software',
+    }}
+    callToAction={{
+    }}
+  >
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
@@ -170,33 +534,56 @@ const metadata = {
     ]}
   />
 
+  <!-- Features2 Widget ************** -->
 
-  <!-- Hero2 Widget ******************* -->
-
-  <Hero2
-    tagline="SaaS Web Demo"
-    actions={[
-      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
-      { text: 'Learn more', href: '#features' },
+  <Features2
+    title="Personal y recursos preasignados"
+    subtitle=""
+    columns={2}
+    items={[
+      {
+        title: 'División de desarrollo',
+        description:
+          'Sueldo de Desarrolladores, licencias de software.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Departamento auxiliar',
+        description:
+          'Sueldos de documentadores.',
+        icon: 'tabler:home-star',
+      },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
   >
-    <Fragment slot="title">
-      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
-        >SaaS</span
-      > companion<br />
-    </Fragment>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
-      >
-      Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
-    </Fragment>
-  </Hero2>
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Aprobaciones"
+    subtitle=""
+    columns={2}
+    items={[
+      {
+        title: '24/02/2024',
+        description:
+          'Empacadora Alum.',
+        icon: 'tabler:school',
+      },
+      {
+        title: '24/02/2024',
+        description:
+          'Implementación de software constructivas (ISC).',
+        icon: 'tabler:home-star',
+      },
+    ]}
+  />
+
+
+  <!--A partir de aqui se termina -->
 
   <!-- Features Widget *************** -->
 
@@ -241,172 +628,6 @@ const metadata = {
     ]}
   />
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    title="Use cases"
-    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
-    isReversed
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Are you a startup with big dreams? AstroWind propels your success. Our template forges a seamless online presence, attracting investors and customers from day one. Astro 4.0 and Tailwind CSS ensure striking, responsive sites, leaving lasting impressions. Countless startups leverage AstroWind to kickstart their journey and resonate with audiences.',
-      },
-      {
-        title: 'Benefits:',
-        description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
-      alt: 'Startup Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Startup success stories: <br /><span class="text-2xl">Launching with AstroWind</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `For SaaS businesses, user experience is key. AstroWind enhances showcasing SaaS solutions intuitively. The template's Astro 4.0 and Tailwind CSS integration guarantees user-friendly experience, mirroring your software's efficiency. Customize pages to communicate SaaS value and solutions for your audience.`,
-      },
-      {
-        title: 'Benefits:',
-        description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
-      alt: 'SaaS Businesses Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `Your portfolio is your masterpiece, and AstroWind is your canvas. Whether you're a designer, photographer, artist, or any other creative professional, AstroWind empowers you to showcase your work with elegance and sophistication. Tailored to highlight your creative projects, AstroWind's templates offer a visually immersive experience that lets your portfolio shine.`,
-      },
-      {
-        title: 'Benefits:',
-        description: `Serve as a captivating backdrop to showcase your creative work, capturing attention and leaving a lasting impression. <br /> Tailor your portfolio to reflect your unique style and artistic vision. <br /> Prioritizes visuals, allowing you to present your work in high-resolution detail that draws viewers into your creations. <br /> Enables seamless navigation for effortless portfolio exploration.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Portfolio Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Creative portfolios: <br /><span class="text-2xl">Highlighting your work</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    items={[
-      {
-        title: 'Description:',
-        description: `For small businesses, a well-crafted website can be a game-changer. AstroWind empowers small businesses to not only establish a credible online presence but also convert visitors into loyal customers. The template's thoughtful design and optimization features ensure that your website doesn't just attract attention but also guides visitors through a seamless journey, ultimately leading to conversions.`,
-      },
-      {
-        title: 'Benefits:',
-        description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Small Business Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Small business growth: <br /><span class="text-2xl">Converting visitors into customers</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Pricing Widget ******************* -->
-
-  <Pricing
-    title="Flexible pricing plans"
-    prices={[
-      {
-        title: 'free',
-        subtitle: 'Access to core features and a wide range of templates',
-        price: '0',
-        period: '/ month',
-        callToAction: {
-          target: '_blank',
-          text: 'Get Started for Free',
-          href: '#',
-        },
-      },
-      {
-        title: 'pro',
-        subtitle: 'Premium templates and advanced customization',
-        price: 15,
-        period: '/ Month',
-        callToAction: {
-          target: '_blank',
-          text: 'Upgrade to Pro',
-          href: '#',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'Enterprise',
-        subtitle: 'Tailored solutions for large-scale projects',
-        price: 45,
-        period: '/ Month',
-        callToAction: {
-          target: '_blank',
-          text: 'Unlock Enterprise Features',
-          href: '#',
-        },
-      },
-    ]}
-  />
-
   <!-- FAQs Widget ******************* -->
 
   <FAQs
@@ -441,43 +662,4 @@ const metadata = {
     </Fragment>
   </FAQs>
 
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Reach out to us"
-    subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
-    callToAction={{
-      text: 'Contact us',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Email us',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Call us',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Follow us',
-        description: '@example',
-        icon: 'tabler:brand-twitter',
-      },
-    ]}
-  />
-
-  <!-- BlogLatestPost Widget **************** -->
-
-  <BlogLatestPosts
-    id="blog"
-    title="Stay informed with AstroWind's blog"
-    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
 </Layout>
