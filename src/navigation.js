@@ -35,12 +35,16 @@ export const headerData = {
           href: getPermalink('/desarrollo/herramientasDeGestionEstrategica'),
         },
         {
-          text: 'Estructura Organizacional',
-          href: getPermalink('/nosotros/estructuraOrganizacional'),
+          text: 'Innovación y Tecnología',
+          href: getPermalink('/desarrollo/innovacionytecnologia'),
         },
         {
-          text: 'Cultura Organizacional',
-          href: getPermalink('/nosotros/culturaOrganizacional'),
+          text: 'Manejo del cambio y la innovación',
+          href: getPermalink('/desarrollo/innovacion'),
+        },
+        {
+          text: 'Herramientas de Gestión Operativa en la empresa',
+          href: getPermalink('/desarrollo/culturaOrganizacional'),
         },
       ],
     },

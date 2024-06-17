@@ -1,0 +1,99 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Innovación y Tecnología',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Innovación y Tecnología"
+    image={{ src: '~/assets/images/tecnologia.png', alt: 'Cuadro de Mando Integral',}}
+  /> 
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Tecnología base"
+    columns={3}
+    items={[
+      {
+        description:
+          'Bases de datos relacionales (por ejemplo, MySQL, PostgreSQL) para almacenar y gestionar la información de las facturas.',
+      },
+      {
+        description:
+          'Lenguajes de programación como Python o Java para el desarrollo de software de gestión de facturas. ',
+      },
+      {
+        description: `Frameworks de desarrollo web como Django (Python) o Spring (Java) para construir aplicaciones web para la gestión de facturas. `,
+      },
+      {
+        description:
+          'Herramientas de gestión de proyectos como Jira o Trello para organizar y dar seguimiento al desarrollo del software.',
+      },
+      {
+        description:
+          'Herramientas de análisis de datos como Power BI o Tableau para obtener insights sobre los patrones de facturación y el rendimiento financiero.',
+      },
+      /*{
+        title: 'Fashion Design',
+        description:
+          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
+        icon: 'tabler:tie',
+      },*/
+    ]}
+  />
+  <Features2
+  title="Tecnología clave"
+  columns={3}
+  items={[
+    {
+      description:
+        'OCR (Reconocimiento Óptico de Caracteres) para la extracción automática de información de las facturas.',
+    },
+    {
+      description: `APIs de integración con sistemas de contabilidad o ERP (Enterprise Resource Planning) para facilitar la sincronización de datos.`,
+    },
+  ]}
+/>
+<Features2
+title="Tecnología emergente"
+columns={3}
+items={[
+  {
+    description:
+      'Blockchain para garantizar la seguridad y la autenticidad de las facturas.',
+  },
+  {
+    description:
+      'Inteligencia Artificial y Machine Learning para la automatización de procesos y la detección de fraudes en las facturas.',
+  },
+  {
+    description: `Aplicaciones móviles para facilitar la captura y gestión de facturas desde dispositivos móviles.`,
+  },
+]}
+/>
+  <!-- Content Widget **************** -->
+
+
+  <!-- Content Widget **************** -->
+
+
+  <!-- Testimonials Widget *********** -->
+
+
+
+  <!-- CallToAction Widget *********** -->
+
+
+</Layout>

@@ -1,0 +1,196 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero3 from '~/components/widgets/Hero3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Manejo del cambio y la innovación',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero3
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Manejo del cambio y la innovación"
+    subtitle="Implementar el manejo del cambio y la innovación en una empresa de gestión de facturas puede ser un proceso desafiante, pero también gratificante por todos aquellos resultados que podemos obtener al final."
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        description:
+          'Crear una visión clara y compartida sobre la importancia del cambio y la innovación para poder conseguir el éxito de la empresa.',
+      },
+      {
+        description:
+          'Comunicar de manera efectiva y eficiente los distintos beneficios del cambio y la innovación a todos los empleados que participan en la empresa.',
+      },
+      {
+        description:
+          'Fomentar un entorno donde los empleados se sientan libres y cómodos para expresar nuevas ideas y correr riesgos que podrían servir de ayuda para mejorar los procesos y el entorno de la empresa.',
+      },
+      {
+        description:
+          'Recompensar a los empleados que contribuyan con éxito al cambio y la innovación para motivarlos a continuar con su labor de la misma manera y que no reduzcan su rendimiento.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/ambiente.webp',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Establecer una cultura de cambio e innovación </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        description:
+          'Realizar un análisis sobre los procesos y sistemas existentes para identificar áreas que puedan sufrir algunas mejor.',
+      },
+      {
+        description:
+          'Realizar investigaciones de mercado para identificar nuevas tendencias y necesidades de los clientes para así abarcar más áreas y ser competentes en dicho mercado.',
+      },
+      {
+        description:
+          'Solicitar comentarios de los empleados, clientes y proveedores que ayuden como retroalimentación para buscar mejoras en la empresa.',
+      },
+      {
+        description:
+          'Organizar sesiones para que se den diversas ideas que generen nuevas maneras de trabajar en la empresa.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/MERCADOS.png',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Identificar oportunidades de cambio e innovación</h3>
+    </Fragment>
+  </Content>
+
+  <Content
+  isReversed
+  items={[
+    {
+      description:
+        'Definir los objetivos específicos del cambio o la innovación.',
+    },
+    {
+      description:
+        'Identificar los recursos necesarios para lograr e implementar el cambio en la empresa.',
+    },
+    {
+      description:
+        'Crear un cronograma para tener el orden necesario en las etapas de cambio.',
+    },
+    {
+      description:
+        'Se debe comunicar el plan de cambio a todos los empleados afectados.',
+    },
+    {
+      description:
+        'Brindar capacitación y apoyo a los empleados para que puedan adaptarse al cambio y retomar sus labores con la mínima cantidad de problemas.',
+    },
+    {
+      description:
+        'Monitorear y evaluar de manera continua el progreso del cambio y realizar los ajustes necesarios.',
+    },
+  ]}
+  image={{
+    src: '~/assets/images/plansr.jpg',
+    alt: 'Features Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Desarrollar e implementar planes de cambio</h3>
+  </Fragment>
+</Content>
+
+<!-- Content Widget **************** -->
+
+<Content
+  isAfterContent
+  items={[
+    {
+      description:
+        'Identificar las posibles fuentes de resistencia al cambio para actuar de manera adecuada y eficiente ante ellas.',
+    },
+    {
+      description:
+        'Comunicar los beneficios del cambio de manera clara y convincente para evitar problemas futuros.',
+    },
+    {
+      description:
+        'Abordar las preocupaciones de los empleados de manera honesta y abierta.',
+    },
+    {
+      description:
+        'Brindar apoyo a los empleados que tienen dificultades para adaptarse al cambio.',
+    },
+  ]}
+  image={{
+    src: '~/assets/images/resistencia.jpg',
+    alt: 'Benefits Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Gestionar la resistencia al cambio</h3>
+  </Fragment>
+</Content>
+
+ <Content
+  isReversed
+  items={[
+    {
+      description:
+        'Crear un proceso que funja de apoyo a la presentación y evaluación de nuevas ideas en la empresa.',
+    },
+    {
+      description:
+        'Invertir en investigación y desarrollo.',
+    },
+    {
+      description:
+        'Colaborar con otras empresas y organizaciones innovadoras en las distintas áreas del mercado de ser necesario.',
+    },
+    {
+      description:
+        'Celebrar y promover los éxitos de la innovación.',
+    },
+    {
+      description:
+        'Implementar el manejo del cambio y la innovación requiere un esfuerzo continuo y dedicado si se quiere mejorar y resaltar en el mercado.',
+    },
+  ]}
+  image={{
+    src: '~/assets/images/Innovation.webp',
+    alt: 'Features Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Fomentar la innovación continua</h3>
+  </Fragment>
+</Content>
+  <!-- Testimonials Widget *********** -->
+
+  <!-- CallToAction Widget *********** -->
+
+</Layout>

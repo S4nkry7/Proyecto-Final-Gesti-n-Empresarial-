@@ -7,7 +7,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Herramientas de Gestión Estratégica',
 };
 ---
 
@@ -17,6 +17,7 @@ const metadata = {
   <Hero
     tagline="S&C FACTUR S.A DE C.V"
     title="Herramientas de Gestión Estratégica "
+    
   />  
   <!-- Content Widget **************** -->
 
@@ -24,37 +25,31 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Estrategia, estructura y rivalidad de la empresa',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'La empresa se distingue por su enfoque centrado en el cliente y su capacidad para adaptar sus servicios a las necesidades individuales de cada cliente. Su estructura ágil le permite innovar rápidamente y responder a los cambios en el mercado, mientras que la rivalidad en el sector la impulsa a mantener altos estándares de calidad y eficiencia en sus servicios.',
+      
+      }, 
+      {
+        title: 'Condiciones de la demanda',
+        description:
+          'Existe una creciente demanda de servicios de organización de facturas entre individuos y pequeñas empresas que buscan simplificar sus procesos financieros y administrativos. Esta demanda se ve impulsada por la necesidad de ahorrar tiempo y reducir el estrés asociado con la gestión de documentos financieros.',
+      
       },
       {
-        title: 'Customization Tools',
+        title: 'Sectores conexos y de apoyo',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Pre-Designed Elements',
-        description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'La empresa se beneficia de la colaboración con proveedores de tecnología y software de gestión financiera, así como de servicios financieros que facilitan la integración de sus soluciones con sistemas bancarios y de pago.',
+      
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: '~/assets/images/diamante4.png',
+      alt: 'Diamante de Porter',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Diamante de Porter</h3>
     </Fragment>
   </Content>
 
@@ -64,92 +59,99 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Condiciones de los factores',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
+          'La rivalidad entre empresas gestoras de facturas puede ser intensa, especialmente si hay muchas empresas que ofrecen servicios similares en el mismo mercado. La diferenciación de servicios, la innovación tecnológica y la calidad del servicio pueden ser clave para destacar entre la competencia.',
+     
       },
       {
-        title: 'Professional Appearance',
+        title: 'El azar',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'Si un evento inesperado crea oportunidades en el mercado o reduce las barreras de entrada, podría aumentar la amenaza de nuevos competidores en la industria de la gestión de facturas. Por ejemplo, si un cambio regulatorio facilita la entrada de nuevas empresas al mercado, podría aumentar la competencia y afectar la rentabilidad de las empresas existentes.',
+     
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Gobierno',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
-      },
-      {
-        title: 'Instant Download',
-        description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          ' Las políticas gubernamentales favorables hacia la digitalización de procesos financieros y la protección de datos personales proporcionan un entorno propicio para el crecimiento de la empresa. Además, las regulaciones que promueven la transparencia en la gestión financiera aumentan la demanda de servicios de organización de facturas.',
+      
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: '~/assets/images/diamante2.png',
       alt: 'Benefits Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"></h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
-  <Testimonials
-    title="Words from real customers"
-    testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-    ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
-  />
+  <Content
+  isReversed
+  items={[
+    {
+      title: 'Fortalezas',
+      description:
+      '<ul>' +
+          '<li>1. Tecnología avanzada: La empresa cuenta con una plataforma tecnológica avanzada que permite la gestión eficiente de facturas y documentos financieros.</li>' +
+          '<li>2. Flexibilidad y personalización: La empresa ofrece soluciones personalizadas adaptadas a las necesidades individuales de cada cliente, lo que aumenta su satisfacción y fidelización.</li>' +
+       '</ul>',
+    }, 
+    {
+      title: 'Oportunidades',
+      description:
+      '<ul>' +
+          '<li>1. Crecimiento del mercado: Existe un crecimiento continuo en la demanda de servicios de organización de facturas debido a la digitalización de procesos financieros y administrativos.</li>' +
+          '<li>2. Expansión a nuevos segmentos: La empresa puede expandir su alcance a nuevos segmentos de mercado, como pequeñas empresas y profesionales independientes que necesitan ayuda con la gestión de facturas.</li>' +
+          '<li>3. Alianzas estratégicas: La posibilidad de establecer alianzas estratégicas con proveedores de tecnología y servicios financieros para mejorar su oferta y alcance.</li>' +
+          '</ul>',
+    },
+  ]}
+  image={{
+    src: '~/assets/images/foda.png',
+    alt: 'Diamante de Porter',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Matriz FODA</h3>
+  </Fragment>
+</Content>
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
-    actions={[
+  <Content
+    isAfterContent
+    items={[
       {
-        variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
-      },
+      title: 'Debilidades',
+      description:
+      '<ul>' +
+          '<li>1. Dependencia de la tecnología: La empresa puede ser vulnerable a interrupciones en su plataforma tecnológica, lo que podría afectar la prestación de servicios.</li>' +
+          '<li>2. Costos operativos: Los altos costos operativos asociados con la tecnología y el personal especializado pueden afectar la rentabilidad de la empresa.</li>' +
+       '</ul>',
+    }, 
+    {
+      title: 'Amenazas',
+      description:
+      '<ul>' +
+          '<li>1. Competencia: La competencia en el mercado de la gestión de facturas está aumentando, lo que podría afectar la participación de mercado de la empresa.</li>' +
+          '<li>2. Cambios regulatorios: Cambios en las regulaciones fiscales y financieras podrían afectar los procesos y requisitos de gestión de facturas, lo que requeriría adaptaciones por parte de la empresa.</li>' +
+          '<li>3. Seguridad de datos: Las preocupaciones sobre la seguridad y privacidad de los datos financieros pueden afectar la confianza de los clientes y la reputación de la empresa si no se abordan adecuadamente.</li>' +
+          '</ul>',
+    },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
-  />
+    image={{
+      src: '~/assets/images/foda.png',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"></h3>
+    </Fragment>
+  </Content>
+
+  
 </Layout>
