@@ -9,7 +9,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
 
-import { headerData } from '~/navigation';
+import Hero from '~/components/widgets/Hero.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
@@ -20,12 +20,17 @@ const metadata = {
 
 <Layout metadata={metadata}>
 
+  <Hero
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Acta Constitutiva"
+  />
+
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Acta Constitutiva"
+    title="Datos"
     subtitle=""
-    tagline="Datos"
+    tagline=""
     items={[
       {
         title: 'Empresa / Organización ',
@@ -89,6 +94,28 @@ const metadata = {
       },
     ]}
   />
+
+  <Features2
+    title="Propósito y justificación del proyecto "
+    subtitle={"El propósito se centra en mejorar la eficiencia del departamento de crédito y cobranza de la " +
+              "empresa del cliente, para así lograr una mayor eficiencia la cual permita que la empresa pueda " +
+              "crecer sin la necesidad de contratar más personal o que haya problemas de eficiencia al tratar " +
+              "con los clientes. "}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <Features2
+    title="Descripción del proyecto y entregables "
+    subtitle={"Se realizará una aplicación de escritorio la cual permita cotejar los pagos con las facturas para " +
+              "aplicar dichos pagos, las facturas podrán ser registradas en la base de datos de la aplicación y se podrán buscar por diferentes campos. Se entregará el proyecto, los manuales de usuario y técnico"}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0"></div>
+    </Fragment>
+  </Features2>
 
   <!-- Testimonials Widget *********** -->
 

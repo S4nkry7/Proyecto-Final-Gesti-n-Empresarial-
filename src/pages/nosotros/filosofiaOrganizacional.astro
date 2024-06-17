@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
 
@@ -10,6 +10,22 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+
+  <Hero
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Filosofía Organizacional"
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Credo"
+    subtitle="Creemos en la importancia de proporcionar soluciones eficientes y personalizadas para optimizar la gestión de facturas, contribuyendo así al bienestar y la eficiencia de nuestros clientes. "
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
   <!-- Features Widget *************** -->
 
@@ -64,15 +80,4 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Credo"
-    subtitle="Creemos en la importancia de proporcionar soluciones eficientes y personalizadas para optimizar la gestión de facturas, contribuyendo así al bienestar y la eficiencia de nuestros clientes. "
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
 </Layout>

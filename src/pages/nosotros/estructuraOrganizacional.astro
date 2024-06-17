@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import Hero from '~/components/widgets/Hero.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 
 const metadata = {
@@ -10,14 +10,18 @@ const metadata = {
 
 <Layout metadata={metadata}>
   
+  <Hero
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Estructura Organizacional"
+  />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
     id="features"
-    title="Estructura Organizacional"
+    title=""
     subtitle=""
-    tagline="S&C Factur S.A de C.V"
+    tagline=""
     columns={2}
     items={[
       {
