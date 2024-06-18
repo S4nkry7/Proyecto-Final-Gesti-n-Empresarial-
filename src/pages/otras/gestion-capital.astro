@@ -1,0 +1,256 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Steps2 from '../../components/widgets/Steps2.astro';
+import HeroText from '../../components/widgets/HeroText.astro';
+
+const metadata = {
+  title: `Gestión del capital humano y la calidad`,
+};
+const fiveS = [
+  {
+    title: 'Selección (Seiri - Sort)',
+    subtitle: 'Se busca eliminar elementos innecesarios del área de trabajo.',
+    items: [
+      {
+        title: 'Auditoría de Inventario',
+        description:
+          'Realiza una auditoría completa de todos los materiales, herramientas, equipos y documentos en cada área de trabajo.',
+      },
+      {
+        title: 'Identificación de Necesidades',
+        description:
+          'Clasifica los elementos en necesarios e innecesarios. Mantén solo lo que realmente se necesita para las operaciones diarias.',
+      },
+      {
+        title: 'Eliminación de Exceso',
+        description:
+          'Desecha, recicla o almacena adecuadamente los elementos que no son necesarios. Esto incluye documentos antiguos, herramientas duplicadas o equipos obsoletos.',
+      },
+    ],
+  },
+  {
+    title: 'Organización (Seiton - Set in Order)',
+    subtitle: 'Organizar el área de trabajo de manera que los elementos necesarios estén fácilmente accesibles.',
+    items: [
+      {
+        title: 'Asignación de Espacios',
+        description:
+          'Designa lugares específicos para cada herramienta, material y equipo. Utiliza etiquetas y señalización clara.',
+      },
+      {
+        title: 'Mapeo de Espacios',
+        description:
+          'Crea mapas o diagramas de cada área de trabajo para que todos sepan dónde se encuentran los elementos.',
+      },
+      {
+        title: 'Optimización de Flujo de Trabajo',
+        description:
+          'Organiza las estaciones de trabajo para minimizar movimientos innecesarios y facilitar el acceso rápido a los elementos.',
+      },
+    ],
+  },
+  {
+    title: 'Limpieza (Seiso - Shine)',
+    subtitle: 'Mantener el área de trabajo limpia y en buen estado.',
+    items: [
+      {
+        title: 'Rutinas de Limpieza',
+        description:
+          'Establece rutinas de limpieza diarias, semanales y mensuales. Asigna responsabilidades específicas a los empleados.',
+      },
+      {
+        title: 'Inspecciones Regulares',
+        description: 'Realiza inspecciones regulares para asegurar que se mantengan los estándares de limpieza.',
+      },
+      {
+        title: 'Mantenimiento Preventivo',
+        description:
+          'Implementa un programa de mantenimiento preventivo para todos los equipos y maquinaria para evitar fallos y deterioros.',
+      },
+    ],
+  },
+  {
+    title: 'Estandarización (Seiketsu - Standardize)',
+    subtitle: 'Crear estándares para mantener la organización y la limpieza.',
+    items: [
+      {
+        title: 'Procedimientos Escritos',
+        description:
+          'Documenta todas las rutinas de selección, organización y limpieza en procedimientos claros y accesibles para todos los empleados.',
+      },
+      {
+        title: 'Formación Continua',
+        description: 'Capacita a todos los empleados en estos procedimientos y en la importancia de seguirlos.',
+      },
+      {
+        title: 'Auditorías Internas',
+        description:
+          'Realiza auditorías internas periódicas para asegurar que los estándares se estén siguiendo y ajusta los procedimientos según sea necesario.',
+      },
+    ],
+  },
+  {
+    title: 'Disciplina (Shitsuke - Sustain)',
+    subtitle: 'Mantener y mejorar los estándares establecidos.',
+    items: [
+      {
+        title: 'Cultura de Disciplina',
+        description:
+          "Fomenta una cultura organizacional que valore la disciplina y el compromiso con los procedimientos de las 5's. ",
+      },
+      {
+        title: 'Reconocimiento y Recompensa',
+        description: 'Reconoce y recompensa a los empleados que se destaquen en el mantenimiento de los estándares.',
+      },
+      {
+        title: 'Mejora Continua',
+        description:
+          'Establece un sistema de feedback continuo para identificar áreas de mejora y realizar ajustes necesarios en los procedimientos.',
+      },
+    ],
+  },
+];
+const jit = [
+  {
+    title: 'Análisis y Mapeo de Procesos Actuales',
+    items: [
+      {
+        subtitle: 'Identificación de Procesos Clave',
+        description: `Mapea todos los procesos actuales relacionados con la emisión, registro y cobro de facturas. Identifica las áreas que consumen más tiempo y recursos.`,
+      },
+      {
+        subtitle: 'Análisis de Causas Raíz',
+        description:
+          'Utiliza herramientas como el diagrama de Ishikawa para identificar las causas raíz de las ineficiencias en el proceso de gestión de facturas.',
+      },
+    ],
+  },
+  {
+    title: 'Optimización de Procesos',
+    items: [
+      {
+        subtitle: 'Eliminación de Desperdicios',
+        description: `Identifica y elimina actividades que no añaden valor, como pasos redundantes en la verificación de facturas, duplicación de datos y tiempos de espera innecesarios.`,
+      },
+      {
+        subtitle: 'Automatización de Tareas',
+        description:
+          'Implementa software de automatización para tareas repetitivas, como la generación y envío de facturas, recordatorios de pago y conciliación automática de pagos.',
+      },
+    ],
+  },
+  {
+    title: 'Mejora de la Comunicación y Colaboración',
+    items: [
+      {
+        subtitle: 'Sistemas Integrados',
+        description: `Utiliza sistemas integrados de gestión empresarial (ERP) que permitan la comunicación en tiempo real entre el departamento de ventas, crédito y cobranza.`,
+      },
+      {
+        subtitle: 'Portales para Clientes',
+        description:
+          'Implementa portales en línea donde los clientes puedan ver el estado de sus facturas, realizar pagos y comunicarse directamente con el departamento de cobranza.',
+      },
+    ],
+  },
+  {
+    title: 'Capacitación y Empoderamiento del Personal',
+    items: [
+      {
+        subtitle: 'Formación Continua',
+        description: `Proporciona formación continua al personal sobre mejores prácticas en la gestión de crédito y cobranza, y el uso de nuevas herramientas tecnológicas.`,
+      },
+      {
+        subtitle: 'Empoderamiento',
+        description:
+          'Fomenta una cultura de empoderamiento donde los empleados puedan tomar decisiones rápidas y eficaces en relación con la gestión de facturas y cobros.',
+      },
+    ],
+  },
+  {
+    title: 'Implementación de un Sistema de Seguimiento y Control',
+    items: [
+      {
+        subtitle: 'Formación Continua',
+        description: `Proporciona formación continua al personal sobre mejores prácticas en la gestión de crédito y cobranza, y el uso de nuevas herramientas tecnológicas.`,
+      },
+      {
+        subtitle: 'Empoderamiento',
+        description:
+          'Fomenta una cultura de empoderamiento donde los empleados puedan tomar decisiones rápidas y eficaces en relación con la gestión de facturas y cobros.',
+      },
+    ],
+  },
+  {
+    title: 'Implementación de un Sistema de Seguimiento y Control',
+    items: [
+      {
+        subtitle: 'Indicadores de Desempeño',
+        description: `Define e implementa indicadores clave de desempeño (KPI) para monitorear la eficiencia del proceso de facturación y cobranza, como el ciclo de tiempo de la factura, la tasa de cobranza y el nivel de satisfacción del cliente.`,
+      },
+      {
+        subtitle: 'Dashboard en Tiempo Real',
+        description:
+          'Utiliza dashboards en tiempo real para visualizar el estado actual de las facturas y cobros, permitiendo una toma de decisiones rápida y basada en datos.',
+      },
+    ],
+  },
+  {
+    title: 'Justo a Tiempo (JIT) en la Gestión de Facturas',
+    items: [
+      {
+        subtitle: 'Facturación Oportuna',
+        description: `Implementa procesos para que las facturas sean generadas y enviadas tan pronto como se complete una venta o un servicio, reduciendo el retraso entre la entrega del servicio/producto y la emisión de la factura.`,
+      },
+      {
+        subtitle: 'Cobro Eficiente',
+        description:
+          'Establece mecanismos para la cobranza oportuna, como recordatorios automatizados y acuerdos de pago, para asegurarte de que los pagos se reciban en el menor tiempo posible.',
+      },
+      {
+        subtitle: 'Minimización de Inventarios de Facturas',
+        description:
+          'Asegúrate de que las facturas pendientes sean procesadas y cobradas rápidamente, reduciendo el “inventario” de facturas por cobrar.',
+      },
+    ],
+  },
+];
+---
+
+<Layout metadata={{metadata}}>
+  <section>
+    <HeroText
+      tagline="Las 5's"
+      title="Gestión del capital humano y la calidad"
+      subtitle="Implementación de la calidad"
+    />
+    {
+      fiveS.map(({title, subtitle, items}, idx) => (
+        <Steps2 title={title} subtitle={subtitle} isReversed={idx % 2 !== 0} items={items}/>
+      ))
+    }
+  </section>
+
+  <section class="flex flex-col gap-8 mx-auto mb-10 px-4">
+    <HeroText tagline="JIT" title="Implementación de Just in Time"/>
+    {
+      jit.map(({title, items}) => (
+        <div>
+          <h2
+            class="text-center font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
+            {title}
+          </h2>
+          <div class=`${items.length === 2 ? 'md:grid-cols-2' : 'lg:grid-cols-3'} grid grid-cols-1 gap-4 mx-auto w-fit mt-8`>
+            {items.map(({subtitle, description}) => (
+              <div
+                class="max-w-[50ch] flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+                <h5 class="text-xl font-bold">{subtitle}</h5>
+                <p class="text-muted mt-2">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </section>
+</Layout>

@@ -1,0 +1,163 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '../../components/widgets/HeroText.astro';
+import Content from '../../components/widgets/Content.astro';
+
+const metadata = {
+  title: 'Aspectos legales',
+};
+
+const legal = [
+  {
+    title: 'Aspectos Legales',
+    subtitle: 'Cumplimiento de Normativas y contratos',
+    items: [
+      {
+        title: 'Regulación Fiscal y Contable:',
+        description: `Asegurar que el sistema de facturación cumpla con las regulaciones fiscales y contables locales e internacionales. Esto incluye la correcta emisión de facturas electrónicas y el reporte adecuado a las autoridades fiscales.`,
+      },
+      {
+        title: 'Regulación de Comercio Electrónico:',
+        description: `Si los servicios incluyen la emisión de facturas electrónicas, debe cumplir con las regulaciones de comercio electrónico aplicables en la región.`,
+      },
+      {
+        title: 'Términos y Condiciones:',
+        description: `Establecer términos y condiciones claros para el uso del software de facturación, incluyendo las responsabilidades de ambas partes, limitaciones de responsabilidad y políticas de uso.`,
+      },
+      {
+        title: 'Acuerdos de Servicio (SLAs):',
+        description: `Definir acuerdos de nivel de servicio que especifiquen el tiempo de respuesta y la disponibilidad del servicio, asegurando la confianza de los clientes.`,
+      },
+    ],
+  },
+  {
+    title: 'Propiedad Intelectual',
+    subtitle: 'Protección de Software y licencias',
+    items: [
+      {
+        title: 'Registro de Derechos de Autor:',
+        description: `Registrar el software de facturación y cualquier otra herramienta desarrollada como propiedad intelectual para protegerlo de usos no autorizados.`,
+      },
+      {
+        title: 'Patentes:',
+        description: `Si se ha desarrollado alguna tecnología innovadora dentro del software, considerar patentarla para protegerla de la competencia.`,
+      },
+      {
+        title: 'Licencias de Uso:',
+        description: `Definir y aplicar licencias de uso para el software, estableciendo claramente los derechos y restricciones para los usuarios.`,
+      },
+      {
+        title: 'Contratos de Confidencialidad (NDAs):',
+        description: `Utilizar contratos de confidencialidad con empleados, desarrolladores y socios para proteger información sensible y propiedad intelectual.`,
+      },
+    ],
+  },
+  {
+    title: 'Propiedad Intelectual',
+    subtitle: 'Protección de Software y licencias',
+    items: [
+      {
+        title: 'Registro de Derechos de Autor:',
+        description: `Registrar el software de facturación y cualquier otra herramienta desarrollada como propiedad intelectual para protegerlo de usos no autorizados.`,
+      },
+      {
+        title: 'Patentes:',
+        description: `Si se ha desarrollado alguna tecnología innovadora dentro del software, considerar patentarla para protegerla de la competencia.`,
+      },
+      {
+        title: 'Licencias de Uso:',
+        description: `Definir y aplicar licencias de uso para el software, estableciendo claramente los derechos y restricciones para los usuarios.`,
+      },
+      {
+        title: 'Contratos de Confidencialidad (NDAs):',
+        description: `Utilizar contratos de confidencialidad con empleados, desarrolladores y socios para proteger información sensible y propiedad intelectual.`,
+      },
+    ],
+  },
+  {
+    title: 'Propiedad Intelectual',
+    subtitle: 'Protección de Software y licencias',
+    items: [
+      {
+        title: 'Registro de Derechos de Autor:',
+        description: `Registrar el software de facturación y cualquier otra herramienta desarrollada como propiedad intelectual para protegerlo de usos no autorizados.`,
+      },
+      {
+        title: 'Patentes:',
+        description: `Si se ha desarrollado alguna tecnología innovadora dentro del software, considerar patentarla para protegerla de la competencia.`,
+      },
+      {
+        title: 'Licencias de Uso:',
+        description: `Definir y aplicar licencias de uso para el software, estableciendo claramente los derechos y restricciones para los usuarios.`,
+      },
+      {
+        title: 'Contratos de Confidencialidad (NDAs):',
+        description: `Utilizar contratos de confidencialidad con empleados, desarrolladores y socios para proteger información sensible y propiedad intelectual.`,
+      },
+    ],
+  },
+  {
+    title: 'Uso de los Datos Personales',
+    subtitle: 'Cumplimiento y consentimiento de la Regulación de Protección de Datos',
+    items: [
+      {
+        title: 'Regulaciones de Protección de Datos:',
+        description: `Cumplir con regulaciones de protección de datos, como la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), mientras que en el sector público existe la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados (LGPDPPSO).`,
+      },
+      {
+        title: 'Política de Privacidad:',
+        description: `Desarrollar una política de privacidad que describa cómo se recopilan, utilizan, almacenan y protegen los datos personales de los clientes.`,
+      },
+      {
+        title: 'Encriptación de Datos:',
+        description: `Implementar encriptación de datos en tránsito y en reposo para proteger la información personal de los clientes.`,
+      },
+      {
+        title: 'Control de Acceso:',
+        description: `Establecer controles de acceso estrictos para asegurarte de que solo el personal autorizado tenga acceso a datos sensibles.`,
+      },
+      {
+        title: 'Evaluaciones de Seguridad:',
+        description: `Realizar evaluaciones de seguridad regulares y pruebas de penetración para identificar y corregir vulnerabilidades. `,
+      },
+      {
+        title: 'Obtención de Consentimiento:',
+        description: `Asegurarnos de obtener el consentimiento explícito de los clientes antes de recopilar y procesar sus datos personales.`,
+      },
+    ],
+  },
+];
+---
+
+<Layout metadata={{ metadata }}>
+  <section>
+    <HeroText title="Aspectos legales" subtitle="Propiedad intelectual y uso de información digital" />
+    {
+      legal.map(({ title, subtitle, items }, idx) => (
+        <Content
+          isReversed={idx % 2 === 0}
+          isAfterContent={true}
+          items={items}
+          image={{
+            src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            alt: 'Portfolio Image',
+          }}
+        >
+          <Fragment slot="content">
+            <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+              {title}
+              <>
+                <br />
+                <span class="text-2xl">{subtitle}</span>
+              </>
+            </h3>
+          </Fragment>
+
+          <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
+          </Fragment>
+        </Content>
+      ))
+    }
+  </section>
+</Layout>
