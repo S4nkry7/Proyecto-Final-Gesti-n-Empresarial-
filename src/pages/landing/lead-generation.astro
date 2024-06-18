@@ -2,10 +2,10 @@
 import Layout from '~/layouts/LandingLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
 
 const metadata = {
-  title: 'Lead Generation Landing Page Demo',
+  title: 'Implementación de tecnologías y tendencias digitales ',
 };
 ---
 
@@ -13,29 +13,246 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero
-    tagline="Lead Generation Landing Demo"
-    title="Effective Lead Generation Landing Page: Unlock the Secrets"
-    subtitle="Discover the secrets to creating a Landing Page that turns curious visitors into eager leads. (Your Hero should grab attention instantly. Use a powerful headline that speaks directly to your target audience.)"
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1597423498219-04418210827d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
-      alt: 'Magnet attracting screws. Lead generation landing page demo',
-    }}
+    tagline="S&C FACTUR S.A DE C.V"
+    title="Implementación de tecnologías y tendencias digitales "
   />
 
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-    actions={[
+  <Content
+    id="porfolio"
+    title="Implementación de Inteligencia Artificial (IA) "
+    subtitle=""
+    isReversed
+    items={[
       {
-        variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        title: 'Automatizar la Facturación: ',
+        description:
+          'Utilizar IA para automatizar el proceso de generación y envío de facturas. Implementar sistemas de reconocimiento óptico de caracteres (OCR) para escanear y procesar documentos físicos automáticamente. ',
+      },
+      {
+        title: 'Automatizar la Facturación: ',
+        description:
+          'Configurar bots de software que generen facturas de manera automática basándose en datos ingresados en el sistema. ',
+      },
+      {
+        title: 'Gestión de Cuentas por Cobrar: ',
+        description:
+          'Implementar IA para analizar patrones de pago y predecir cuándo se realizarán los pagos, permitiendo una mejor gestión del flujo de caja. ',
+      },
+      {
+        title: 'Gestión de Cuentas por Cobrar:',
+        description:
+          'Utilizar chatbots para interactuar con los clientes y responder preguntas comunes sobre facturas, pagos y saldos. ',
       },
     ]}
-  />
+    image={{
+      src: '~/assets/images/iaAutomatizacion.png',
+      alt: '~/assets/images/ambiente.webp',
+    }}
+    callToAction={{
+    }}
+  >
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      1. Automatización de Procesos 
+    </h3>
+  </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Análisis de Datos: ',
+        description:
+          'Implementar algoritmos de IA para analizar grandes volúmenes de datos de facturación y detectar patrones, tendencias y anomalías.  ',
+      },
+      {
+        title: 'Análisis de Datos: ',
+        description: `Utilizar herramientas de análisis predictivo para anticipar comportamientos de los clientes y ajustar estrategias de cobro en consecuencia.  `,
+      },
+      {
+        title: 'Reportes Automatizados:  ',
+        description:
+          'Configurar sistemas de IA para generar reportes financieros y de rendimiento automáticamente, ahorrando tiempo y mejorando la precisión.   ',
+      },
+      {
+        title: 'Reportes Automatizados:  ',
+        description: `Implementar cuadros de mando interactivos que utilicen IA para proporcionar insights en tiempo real sobre el estado de las cuentas por cobrar.   `,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/ia.jpeg',
+      alt: 'Departamento de Desarrollo de Software',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        2. Análisis y Reportes 
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Personalización: ',
+        description: `Utilizar IA para personalizar la comunicación con los clientes, adaptando mensajes y recordatorios de pago según el comportamiento y las preferencias de cada cliente.  `,
+      },
+      {
+        title: 'Personalización: ',
+        description: `Implementar sistemas de recomendación que sugieran productos o servicios adicionales basados en el historial de compras y pagos de los clientes.  `,
+      },
+      {
+        title: 'Atención al Cliente:  ',
+        description: `Implementar chatbots avanzados que utilicen procesamiento de lenguaje natural (NLP) para ofrecer soporte 24/7 a los clientes, respondiendo a preguntas frecuentes y resolviendo problemas comunes.  `,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/iaCliente.webp',
+      alt: 'Departamento de Atención al Cliente',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        3. Mejora de la Experiencia del Cliente 
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+
+
+
+
+  <Content
+    id="porfolio"
+    title="Implementación de Blockchain  "
+    subtitle=""
+    isReversed
+    items={[
+      {
+        title: 'Registro de Transacciones: ',
+        description:
+          'Utilizar blockchain para crear un registro inmutable y seguro de todas las transacciones de facturación. Cada factura y pago se puede registrar en la cadena de bloques, proporcionando un historial verificable y a prueba de manipulaciones. ',
+      },
+      {
+        title: 'Registro de Transacciones: ',
+        description:
+          'Implementar contratos inteligentes (smart contracts) que se ejecuten automáticamente cuando se cumplan ciertas condiciones, como el pago de una factura. ',
+      },
+      {
+        title: 'Protección de Datos:',
+        description:
+          'Utilizar blockchain para asegurar que los datos personales y financieros de los clientes estén protegidos mediante criptografía avanzada. Solo las partes autorizadas pueden acceder a la información. ',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/blockchain1.jpg',
+      alt: '~/assets/images/ambiente.webp',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0"></div>
+    </Fragment>
+
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        1. Seguridad y Transparencia 
+      </h3>
+    </Fragment>
+
+  </Content>
+
+  <Content
+    items={[
+      {
+        title: 'Verificación de Identidad: ',
+        description:
+          'Implementar sistemas de verificación de identidad basados en blockchain para asegurar que solo personas y entidades autorizadas puedan acceder y modificar datos sensibles. ',
+      },
+      {
+        title: 'Verificación de Identidad: ',
+        description:
+          'Utilizar blockchain para autenticar y verificar la validez de las facturas, reduciendo el riesgo de fraude y falsificación.  ',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/blockchain2.jpg',
+      alt: '~/assets/images/ambiente.webp',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0"></div>
+    </Fragment>
+
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        2. Reducción de Fraude 
+      </h3>
+    </Fragment>
+
+  </Content>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Pagos y Liquidaciones: ',
+        description:
+          'Utilizar criptomonedas o tokens basados en blockchain para realizar pagos y liquidaciones instantáneas y seguras, eliminando intermediarios y reduciendo costos de transacción. ',
+      },
+      {
+        title: 'Pagos y Liquidaciones: ',
+        description:
+          'Implementar una plataforma de pagos basada en blockchain que permita a los clientes pagar facturas de manera rápida y segura. ',
+      },
+      {
+        title: 'Interoperabilidad: ',
+        description:
+          'Implementar soluciones de blockchain que sean interoperables con otros sistemas financieros y de facturación, facilitando la integración y la colaboración con socios y proveedores. ',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/blockchain3.jpeg',
+      alt: '~/assets/images/ambiente.webp',
+    }}
+    callToAction={{
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0"></div>
+    </Fragment>
+
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        3. Eficiencia Operacional 
+      </h3>
+    </Fragment>
+
+  </Content>
 </Layout>
