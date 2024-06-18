@@ -44,7 +44,7 @@ export const headerData = {
         },
         {
           text: 'Herramientas de Gestión Operativa en la empresa',
-          href: getPermalink('/desarrollo/culturaOrganizacional'),
+          href: getPermalink('/desarrollo/operativa'),
         },
       ],
     },
