@@ -59,7 +59,7 @@ export const headerData = {
           href: getPermalink('/otras/responsabilidad-social'),
         },
         {
-          text: 'Implementación de las habilidades digitales ',
+          text: 'Implementación de las habilidades digitales',
           href: getPermalink('/otras/habilidades-digitales'),
         },
         {
