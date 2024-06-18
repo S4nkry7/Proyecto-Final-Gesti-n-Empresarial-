@@ -11,6 +11,7 @@ const legal = [
   {
     title: 'Aspectos Legales',
     subtitle: 'Cumplimiento de Normativas y contratos',
+    image: '~/assets/images/1.jpg',
     items: [
       {
         title: 'Regulación Fiscal y Contable:',
@@ -33,50 +34,7 @@ const legal = [
   {
     title: 'Propiedad Intelectual',
     subtitle: 'Protección de Software y licencias',
-    items: [
-      {
-        title: 'Registro de Derechos de Autor:',
-        description: `Registrar el software de facturación y cualquier otra herramienta desarrollada como propiedad intelectual para protegerlo de usos no autorizados.`,
-      },
-      {
-        title: 'Patentes:',
-        description: `Si se ha desarrollado alguna tecnología innovadora dentro del software, considerar patentarla para protegerla de la competencia.`,
-      },
-      {
-        title: 'Licencias de Uso:',
-        description: `Definir y aplicar licencias de uso para el software, estableciendo claramente los derechos y restricciones para los usuarios.`,
-      },
-      {
-        title: 'Contratos de Confidencialidad (NDAs):',
-        description: `Utilizar contratos de confidencialidad con empleados, desarrolladores y socios para proteger información sensible y propiedad intelectual.`,
-      },
-    ],
-  },
-  {
-    title: 'Propiedad Intelectual',
-    subtitle: 'Protección de Software y licencias',
-    items: [
-      {
-        title: 'Registro de Derechos de Autor:',
-        description: `Registrar el software de facturación y cualquier otra herramienta desarrollada como propiedad intelectual para protegerlo de usos no autorizados.`,
-      },
-      {
-        title: 'Patentes:',
-        description: `Si se ha desarrollado alguna tecnología innovadora dentro del software, considerar patentarla para protegerla de la competencia.`,
-      },
-      {
-        title: 'Licencias de Uso:',
-        description: `Definir y aplicar licencias de uso para el software, estableciendo claramente los derechos y restricciones para los usuarios.`,
-      },
-      {
-        title: 'Contratos de Confidencialidad (NDAs):',
-        description: `Utilizar contratos de confidencialidad con empleados, desarrolladores y socios para proteger información sensible y propiedad intelectual.`,
-      },
-    ],
-  },
-  {
-    title: 'Propiedad Intelectual',
-    subtitle: 'Protección de Software y licencias',
+    image: '~/assets/images/2.jpg',
     items: [
       {
         title: 'Registro de Derechos de Autor:',
@@ -99,6 +57,7 @@ const legal = [
   {
     title: 'Uso de los Datos Personales',
     subtitle: 'Cumplimiento y consentimiento de la Regulación de Protección de Datos',
+    image: '~/assets/images/3.jpg',
     items: [
       {
         title: 'Regulaciones de Protección de Datos:',
@@ -133,14 +92,14 @@ const legal = [
   <section>
     <HeroText title="Aspectos legales" subtitle="Propiedad intelectual y uso de información digital" />
     {
-      legal.map(({ title, subtitle, items }, idx) => (
+      legal.map(({ title, subtitle, image, items }, idx) => (
         <Content
           isReversed={idx % 2 === 0}
           isAfterContent={true}
           items={items}
           image={{
-            src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-            alt: 'Portfolio Image',
+            src: image,
+            alt: title,
           }}
         >
           <Fragment slot="content">
