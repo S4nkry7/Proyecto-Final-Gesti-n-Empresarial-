@@ -58,6 +58,14 @@ export const headerData = {
           text: 'Responsabilidad social',
           href: getPermalink('/otras/responsabilidad-social'),
         },
+        {
+          text: 'Implementación de las habilidades digitales ',
+          href: getPermalink('/otras/habilidades-digitales'),
+        },
+        {
+          text: 'Implementación de tecnologías y tendencias digitales',
+          href: getPermalink('/otras/implementacion-tecnologias-tendencias'),
+        },
       ],
     },
     {
@@ -182,15 +190,13 @@ export const footerData = {
       ],
     },
     {
-      title: 'Company',
+      title: 'Desarrollo',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Gestion de Capital', href: '#' },
+        { text: 'Aspectos Legales', href: '#' },
+        { text: 'Responsabilidad Social', href: '#' },
+        { text: 'Implementación de las habilidades digitales', href: '#' },
+        { text: 'Implementación de tecnologías y tendencias digitales', href: '#' },
       ],
     },
   ],
