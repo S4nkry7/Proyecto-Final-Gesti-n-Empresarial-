@@ -1,0 +1,148 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '../../components/widgets/HeroText.astro';
+import Steps from '../../components/widgets/Steps.astro';
+
+const metadata = {
+  title: 'Responsabilidad social',
+};
+
+const social = [
+  {
+    title: 'Diagnóstico y Planeación',
+    items: [
+      {
+        title: `Diagnóstico Inicial <p class="text-sm font-normal"><ul class="list-disc pl-4"><li>Realizar una auditoría para identificar las prácticas actuales de la empresa en términos de responsabilidad social y sustentabilidad.</li><li>Identificar áreas de mejora y oportunidades para implementar nuevas prácticas sostenibles y responsables.</li></ul></p>`,
+        icon: 'tabler:number-1',
+      },
+      {
+        title: `Plan de Acción <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Definir objetivos claros y medibles en relación con la responsabilidad social y la sustentabilidad.</li>
+            <li>Desarrollar estrategias y políticas que apoyen estos objetivos y aseguren su cumplimiento.</li>
+          </ul>
+          </p>`,
+      },
+    ],
+  },
+  {
+    title: 'Responsabilidad Social Empresarial (RSE)',
+    items: [
+      {
+        title: `Ética y Transparencia <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Crear y comunicar un código de ética que promueva la transparencia, la honestidad y el comportamiento ético en todas las operaciones de la empresa. </li>
+            <li>Establecer un sistema de gobernanza que incluya mecanismos de control interno y auditoría para garantizar la transparencia y la rendición de cuentas.</li>           </ul>
+          </p>`,
+      },
+      {
+        title: `Condiciones Laborales <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Proporcionar un entorno de trabajo seguro, inclusivo y equitativo para todos los empleados.</li>
+            <li>Ofrecer oportunidades de capacitación y desarrollo profesional para el personal.</li>
+          </ul>
+          </p>`,
+      },
+      {
+        title: `Desarrollo Comunitario <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Participar en iniciativas y proyectos comunitarios que beneficien a la sociedad, como programas educativos, donaciones a organizaciones benéficas y voluntariado corporativo.</li>
+            <li>Colaborar con organizaciones no gubernamentales y otras entidades para apoyar causas sociales relevantes.</li>
+          </ul>
+          </p>`,
+      },
+    ],
+  },
+  {
+    title: 'Sustentabilidad Ambiental',
+    items: [
+      {
+        title: `Reducción de Impacto Ambiental <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Promover la facturación electrónica para reducir el uso de papel y minimizar el impacto ambiental.</li>
+            <li>Implementar programas de reciclaje en la oficina y promover prácticas para reducir la generación de residuos.</li>
+          </ul>
+          </p>`,
+      },
+      {
+        title: `Eficiencia Energética <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Adoptar tecnologías energéticamente eficientes y fomentar el uso de fuentes de energía renovable. </li>
+            <li>Implementar políticas de oficina sostenible, como apagar equipos electrónicos cuando no estén en uso, utilizar iluminación eficiente y reducir el consumo de agua. </li>
+          </ul>
+          </p>`,
+      },
+      {
+        title: `Gestión de Recursos <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Asegurar el uso eficiente de los recursos disponibles, promoviendo la reutilización y el reciclaje siempre que sea posible. </li>
+            <li>Seleccionar proveedores y materiales que cumplan con criterios de sostenibilidad y responsabilidad ambiental.</li>
+          </ul>
+          </p>`,
+      },
+    ],
+  },
+  {
+    title: 'Uso Responsable de Datos Personales',
+    items: [
+      {
+        title: `Cumplimiento Legal <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Desarrollar y comunicar una política de privacidad clara que describa cómo se recopilan, utilizan, almacenan y protegen los datos personales. </li>
+            <li>Asegurarse de cumplir con todas las regulaciones aplicables en materia de protección de datos, como el GDPR en Europa o la CCPA en los EE.UU. </li>
+          </ul>
+          </p>`,
+      },
+      {
+        title: `Seguridad de Datos <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Implementar medidas de seguridad robustas para proteger los datos personales contra el acceso no autorizado, la pérdida o el robo. </li>
+            <li>Capacitar a los empleados sobre la importancia de la privacidad y la seguridad de los datos personales. </li>
+          </ul>
+          </p>`,
+      },
+    ],
+  },
+  {
+    title: 'Comunicación y Reporte',
+    items: [
+      {
+        title: `Comunicación Interna <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Mantener una comunicación abierta y transparente con todos los empleados sobre las iniciativas y políticas de responsabilidad social y sustentabilidad. </li>
+            <li>Fomentar la participación activa de los empleados en las iniciativas de RSE y sostenibilidad. </li>
+          </ul>
+          </p>`,
+      },
+      {
+        title: `Comunicación Externa <p class="text-sm font-normal">
+          <ul class="list-disc pl-4">
+            <li>Publicar informes periódicos sobre las acciones y resultados en materia de responsabilidad social y sostenibilidad, demostrando el compromiso de la empresa con estos valores. </li>
+            <li>Promover las prácticas sostenibles y responsables de la empresa en las campañas de marketing y comunicación. </li>
+          </ul>
+          </p>`,
+      },
+    ],
+  },
+];
+---
+
+<Layout metadata={{ metadata }}>
+  <section>
+    <HeroText title="Responsabilidad social y sustentabilidad" />
+    {
+      social.map(({ title, items }) => (
+        <Steps
+          id="resume"
+          title={title}
+          items={items.map((item, idx) => ({ ...item, icon: `tabler:number-${idx + 1}` }))}
+          classes={{ container: 'max-w-3xl' }}
+        >
+          <Fragment slot="bg">
+            <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" />
+          </Fragment>
+        </Steps>
+      ))
+    }
+  </section>
+</Layout>
