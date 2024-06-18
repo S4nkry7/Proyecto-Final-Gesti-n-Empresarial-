@@ -192,11 +192,11 @@ export const footerData = {
     {
       title: 'Desarrollo',
       links: [
-        { text: 'Gestion de Capital', href: '#' },
-        { text: 'Aspectos Legales', href: '#' },
-        { text: 'Responsabilidad Social', href: '#' },
-        { text: 'Implementación de las habilidades digitales', href: '#' },
-        { text: 'Implementación de tecnologías y tendencias digitales', href: '#' },
+        { text: 'Gestion de Capital', href: '/otras/gestion-capital' },
+        { text: 'Aspectos Legales', href: '/otras/aspectos-legales' },
+        { text: 'Responsabilidad Social', href: '/otras/responsabilidad-social' },
+        { text: 'Implementación de las habilidades digitales', href: '/otras/habilidades-digitales' },
+        { text: 'Implementación de tecnologías y tendencias digitales', href: '/otras/implementacion-tecnologias-tendencias' },
       ],
     },
   ],
