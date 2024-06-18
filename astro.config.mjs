@@ -16,7 +16,7 @@ const whenExternalScripts = (items = []) => hasExternalScripts ? Array.isArray(i
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
+  output: 'server',
   integrations: [tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), icon({
