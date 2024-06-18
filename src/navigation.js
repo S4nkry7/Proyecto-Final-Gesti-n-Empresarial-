@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getBlogPermalink, getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -45,6 +45,18 @@ export const headerData = {
         {
           text: 'Herramientas de Gestión Operativa en la empresa',
           href: getPermalink('/desarrollo/operativa'),
+        },
+        {
+          text: 'Gestion de capital',
+          href: getPermalink('/otras/gestion-capital'),
+        },
+        {
+          text: 'Aspectos legales',
+          href: getPermalink('/otras/aspectos-legales'),
+        },
+        {
+          text: 'Responsabilidad social',
+          href: getPermalink('/otras/responsabilidad-social'),
         },
       ],
     },
