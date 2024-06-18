@@ -1,0 +1,107 @@
+---
+import HeroText from '../../components/widgets/HeroText.astro';
+import Layout from '../../layouts/PageLayout.astro';
+import Features2 from '../../components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Habilidades digitales',
+};
+
+const abilities = [
+  {
+    title: 'Capacidad de Aprendizaje',
+    tagline: 'Learnability',
+    items: [
+      {
+        title: 'Fomentar el Aprendizaje Continuo',
+        description:
+          'Implementar programas de capacitación y desarrollo continuo para los empleados, enfocándose en habilidades digitales y tecnológicas relevantes para la facturación. ',
+      },
+      {
+        title: 'Promover una Cultura de Aprendizaje',
+        description:
+          'Reconocer y recompensar a los empleados que demuestren un alto compromiso con su desarrollo profesional y aprendizaje. ',
+      },
+      {
+        title: 'Utilizar Herramientas de Aprendizaje',
+        description:
+          'Integrar herramientas de e-learning y plataformas de capacitación en línea para facilitar el acceso al aprendizaje y asegurar que esté disponible en cualquier momento y lugar. ',
+      },
+    ],
+  },
+  {
+    title: 'Capacidad de Trabajo en Equipo',
+    tagline: 'Teamability',
+    items: [
+      {
+        title: 'Fomentar la Colaboración',
+        description:
+          'mplementar herramientas de colaboración digital, como Microsoft Teams, Slack, y plataformas de gestión de proyectos como Asana o Trello, para facilitar la comunicación y la coordinación.',
+      },
+      {
+        title: 'Desarrollar Competencias de Trabajo en Equipo',
+        description:
+          'Realizar talleres y actividades de team-building que ayuden a fortalecer las relaciones interpersonales y mejorar las habilidades de trabajo en equipo. ',
+      },
+      {
+        title: 'Fomentar la Comunicación Abierta',
+        description:
+          'Promover una cultura de comunicación abierta y honesta, donde los empleados se sientan cómodos compartiendo ideas, opiniones y feedback constructivo. ',
+      },
+    ],
+  },
+  {
+    title: 'Creación de Redes de Contacto',
+    tagline: 'Networking',
+    items: [
+      {
+        title: 'Fomentar la Participación en Redes Profesionales',
+        description:
+          'Proporcionar membresías a asociaciones profesionales y redes de la industria de facturación y tecnología. ',
+      },
+      {
+        title: 'Utilizar Plataformas Digitales',
+        description:
+          'Fomentar la participación en grupos de discusión y foros en línea relacionados con la facturación y la tecnología. ',
+      },
+      {
+        title: 'Organizar Eventos Internos y Externos',
+        description:
+          'Organizar eventos internos, como charlas y mesas redondas, donde los empleados puedan compartir conocimientos y establecer conexiones. ',
+      },
+    ],
+  },
+  {
+    title: 'Capacidad de Adaptación',
+    tagline: 'Adaptability',
+    items: [
+      {
+        title: 'Fomentar la Flexibilidad',
+        description:
+          'Implementar políticas laborales flexibles que permitan a los empleados ajustar sus horarios y métodos de trabajo según las necesidades y circunstancias.',
+      },
+      {
+        title: 'Capacitar en Gestión del Cambio',
+        description:
+          'Ofrecer capacitación en gestión del cambio para preparar a los empleados a enfrentar y manejar cambios organizacionales y tecnológicos de manera efectiva. ',
+      },
+      {
+        title: 'Adoptar Tecnologías Ágiles',
+        description:
+          'Utilizar herramientas tecnológicas que faciliten la adaptación rápida a nuevos procedimientos y tecnologías. ',
+      },
+    ],
+  },
+];
+---
+
+<Layout metadata={{ metadata }}>
+  <section>
+    <HeroText title="Implementación de las habilidades digitales" />
+    {
+      abilities.map(({ title, tagline, items }) => (
+        <Features2 title={title} tagline={tagline} columns={items.length} items={items} />
+      ))
+    }
+  </section>
+</Layout>
