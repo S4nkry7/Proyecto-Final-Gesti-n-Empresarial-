@@ -162,11 +162,11 @@ export const footerData = {
     {
       title: 'Desarrollo',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'CMI', href: '/desarrollo/cmi' },
+        { text: 'Estrategias de Gestión Estratégica', href: '/desarrollo/herramientasDeGestionEstrategica' },
+        { text: 'Innovación y Tecnología', href: '/desarrollo/innovacionytecnologia' },
+        { text: 'Manejo del Cambio y la Innovación', href: '/desarrollo/innovacion' },
+        { text: 'Herramientas de Gestión Operativa en la Empresa', href: '/desarrollo/operativa' },
       ],
     },
     {
